@@ -18,7 +18,7 @@ className="py-24 md:py-32 px-6 md:px-10"
 <div className="max-w-6xl mx-auto text-center"> 
 {/* Heading */} 
 <span className="text-[10px] uppercase tracking-[0.4em] text-accent"> 
-Google Reviews 
+Google Reviews
 </span> 
 <h2 className="font-serif text-4xl md:text-5xl mt-3 mb-12"> 
 What Clients Say 
