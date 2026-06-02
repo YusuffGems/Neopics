@@ -36,15 +36,11 @@ export function Footer() {
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-3 mt-6 group"
           >
-            
-
             <div className="size-10 rounded-full border border-foreground/15 flex items-center justify-center hover:bg-accent hover:text-accent-foreground hover:border-accent transition-all">
               <Instagram size={16} />
             </div>
 
             <div className="text-center">
-              
-
               <p className="text-xs text-muted-foreground mt-1 tracking-wide">
                 Wedding • Portrait • Cinematic Photography
               </p>
@@ -75,50 +71,65 @@ export function Footer() {
         {/* BOTTOM SECTION */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 pt-10 border-t border-border">
 
-          {/* BRAND */}
-           <a
-        href="#"
-        className="flex items-center gap-3 text-xl md:text-2xl font-serif tracking-[0.2em] italic"
-      >
-        <img
-          src={Neopics}
-          alt="NEOPICS Logo"
-          className="h-30 w-30 object-contain"
-        />
+          {/* LEFT: LOGO + SOCIAL (NOW TOGETHER) */}
+          <div className="flex items-center gap-6">
 
-      </a>
-
-          {/* SOCIAL ICONS */}
-          <div className="flex gap-5">
-
-            {/* INSTAGRAM */}
+            {/* BRAND LOGO */}
             <a
-              href={INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit our Instagram profile"
-              className="size-9 rounded-full border border-foreground/15 flex items-center justify-center text-foreground hover:bg-accent hover:text-accent-foreground hover:border-accent transition-all"
+              href="#"
+              className="flex items-center gap-3 text-xl md:text-2xl font-serif tracking-[0.2em] italic"
             >
-              <Instagram size={15} />
+              <img
+                src={Neopics}
+                alt="NEOPICS Logo"
+                className="h-20 w-20 object-contain"
+              />
             </a>
 
-            {/* WHATSAPP */}
-            <a
-              href={footerWa}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-              onClick={() => trackWaClick("footer")}
-              className="size-9 rounded-full border border-foreground/15 flex items-center justify-center hover:bg-accent hover:text-accent-foreground hover:border-accent transition-all text-[11px] font-bold"
-            >
-              W
-            </a>
+            {/* SOCIAL ICONS */}
+            <div className="flex gap-4">
+
+              {/* INSTAGRAM */}
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Instagram profile"
+                className="size-9 rounded-full border border-foreground/15 flex items-center justify-center text-foreground hover:bg-accent hover:text-accent-foreground hover:border-accent transition-all"
+              >
+                <Instagram size={15} />
+              </a>
+
+              {/* WHATSAPP */}
+              <a
+                href={footerWa}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                onClick={() => trackWaClick("footer")}
+                className="size-9 rounded-full border border-foreground/15 flex items-center justify-center hover:bg-accent hover:text-accent-foreground hover:border-accent transition-all text-[11px] font-bold"
+              >
+                W
+              </a>
+
+            </div>
           </div>
 
           {/* COPYRIGHT */}
-          <div className="text-[10px] uppercase tracking-widest text-muted-foreground">
-            © {new Date().getFullYear()} Neopics Studio
+          <div className="text-[10px] uppercase tracking-widest text-muted-foreground flex flex-col items-center gap-1">
+            <span className="normal-case tracking-normal text-[11px]">
+              Designed & Developed by{" "}
+              <a
+                href="https://www.yusuffux.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                YusuffGems
+              </a>
+            </span>
           </div>
+
         </div>
       </div>
     </footer>

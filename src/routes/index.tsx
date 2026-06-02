@@ -183,7 +183,7 @@ function Index() {
         
         <Services />
         <Testimonials />
-        <FAQ />
+        {/* <FAQ /> */}
         <Contact />
       </main>
       <Footer />
